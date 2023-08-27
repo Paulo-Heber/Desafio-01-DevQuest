@@ -1,0 +1,19 @@
+.cabecalho {
+    display: flex;
+    margin-bottom: 7.2rem;
+    font-family: var(--Family-heading);
+}
+
+.cabecalho a img {
+    height: 4.7rem;
+}
+
+@media(max-width:375px) {
+    .cabecalho {
+        margin-bottom: 6rem;
+    }
+
+    .cabecalho a img {
+        height: 3.2rem;
+    }
+}

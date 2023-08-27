@@ -1,0 +1,38 @@
+.footer .redes {
+    display: flex;
+    justify-content: end;
+    margin-right: 7rem;
+    align-items: end;
+    height: 6rem;
+}
+
+.footer .redes .rede-social a {
+    font-size: 1.6rem;
+    border: 1px solid var(--font-color);
+    border-radius: 50%;
+    width: 3.7rem;
+    height: 3.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7rem;
+    transition: 0.2s ease-in;
+}
+
+.footer .redes .rede-social a:hover {
+    color: var(--interaction);
+    border-color: var(--interaction);
+}
+
+@media(max-width:1024px) {
+    .footer .redes {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .footer .redes .rede-social a {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin: 0.5rem;
+    }
+}

@@ -1,0 +1,84 @@
+.principal {
+    display: flex;
+    font-family: var(--Family-title);
+
+}
+
+.principal div :only-child {
+    width: 63.9rem;
+}
+
+.principal .informacoes {
+    padding: 3.9rem 0 0 4.1rem;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal .informacoes :first-child {
+    font-size: 3.6rem;
+    text-transform: capitalize;
+}
+
+.principal .informacoes p {
+    padding-top: 1.8rem;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    font-family: var(--Family-body);
+
+}
+
+.principal .informacoes .botao {
+    font-size: 1.7rem;
+    background-color: var(--font-color);
+    color: var(--Background);
+    max-width: 40%;
+    text-align: center;
+    margin-top: 2.2rem;
+    border-radius: 3rem;
+    padding: 1.3rem 2.5rem;
+    box-shadow: 1px 3px 6px 3px #4f3989;
+    -moz-box-shadow: 1px 3px 6px 3px #4f3989;
+    -o-box-shadow: 1px 3px 6px 3px #4f3989;
+    transition: 0.2s ease-in;
+}
+
+.principal .informacoes .botao:hover {
+    background-color: var(--interaction);
+    color: var(--font-color);
+}
+
+@media(max-width:1024px) {
+    .principal {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .principal .informacoes {
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .principal .informacoes .botao {
+        font-size: 1.7rem;
+        padding: 0.8rem;
+        margin: 0 0 3.8rem 0;
+        min-width: 65%;
+    }
+
+    .principal div :only-child {
+        margin-bottom: 1rem;
+    }
+
+    .principal .informacoes :first-child {
+        font-size: 2.4rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .principal .informacoes p {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        padding-top: 0;
+    }
+}
